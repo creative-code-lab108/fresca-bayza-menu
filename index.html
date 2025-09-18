@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>فريسكا بايظة</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: "Cairo", sans-serif;
+      background: #fff;
+      color: #333;
+      text-align: center;
+    }
+
+    /* الهيدر البنفسجي */
+    .header {
+      background: #452a7a;
+      color: white;
+      padding: 60px 20px 120px;
+      border-bottom-left-radius: 50% 10%;
+      border-bottom-right-radius: 50% 10%;
+    }
+
+    .header h1 {
+      margin: 0;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    .header p {
+      margin: 15px auto;
+      max-width: 600px;
+      font-size: 1rem;
+      line-height: 1.8;
+    }
+
+    /* كارت المينو */
+    .menu-card {
+      background: white;
+      width: 90%;
+      max-width: 400px;
+      margin: -80px auto 20px;
+      padding: 15px;
+      border-radius: 15px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    }
+
+    .menu-card img {
+      width: 100%;
+      border-radius: 12px;
+    }
+
+    .btn {
+      display: block;
+      background: #ff6600;
+      color: white;
+      font-size: 1rem;
+      padding: 12px;
+      margin-top: 15px;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #e65500;
+    }
+
+    /* اللينك تحت */
+    .footer-link {
+      margin: 20px 0;
+    }
+
+    .footer-link a {
+      text-decoration: none;
+      color: #452a7a;
+      font-size: 1rem;
+      font-weight: bold;
+    }
+
+    /* الفوتر */
+.site-footer {
+    background:rgb(40, 40, 40);
+    color: white;
+    padding: 40px 0 0;
+    text-align: center;   /* ✨ ضيف دي */
+}
+
+
+    .footer-section {
+      margin-bottom: 30px;
+    }
+
+    .footer-section h4 {
+      margin-bottom: 15px;
+      position: relative;
+      padding-bottom: 10px;
+      font-size: 1.2rem;
+    }
+
+.footer-section h4::after {
+    right: 50%;
+    transform: translateX(50%);  /* ✨ عشان الخط يبقى في النص */
+}
+
+
+    .footer-section ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer-section ul li {
+      margin-bottom: 8px;
+    }
+
+    .footer-section ul li i {
+      margin-left: 8px;
+      color: var(--primary-color);
+    }
+
+    .footer-section a {
+      color: #ddd;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .footer-section a:hover {
+      color: white;
+      padding-right: 5px;
+    }
+
+.social-links {
+  display: flex;
+  justify-content: center; /* ✨ ده اللي يخليها في النص */
+  gap: 15px;
+}
+
+
+    .social-links a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 35px;
+      height: 35px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+      transition: 0.3s;
+    }
+
+    .social-links .fac:hover { background: #1877F2; transform: translateY(-3px); }
+    .social-links .in:hover  { background: #C13584; transform: translateY(-3px); }
+    .social-links .wa:hover  { background: #25D366; transform: translateY(-3px); }
+    .social-links .ti:hover  { background: #000000; transform: translateY(-3px); }
+
+    .copyright {
+      text-align: center;
+      padding: 15px;
+      background: rgba(0, 0, 0, 0.2);
+      margin-top: 30px;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+
+    /* متجاوب للموبايل */
+    @media (max-width: 768px) {
+      .header { padding: 40px 15px 100px; }
+      .header h1 { font-size: 1.6rem; }
+      .header p { font-size: 0.9rem; }
+      .menu-card { margin: -60px auto 20px; padding: 12px; }
+      .footer-section { text-align: center; }
+      .footer-section h4::after { right: 50%; transform: translateX(50%); }
+      .social-links { justify-content: center; }
+    }
+
+    @media (max-width: 600px) {
+      .offer-card img { width: 90%; height: 90px; }
+      .offer-card h3 { font-size: 16px; }
+      .new-price { font-size: 15px; padding: 4px 10px; }
+      .offer-card button { font-size: 13px; padding: 8px 14px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- الهيدر -->
+  <div class="header">
+    <h1>فريسكا بايظة</h1>
+    <p>
+      استمتع بأجمد تشكيلة من الفريسكا، الوافل والحلويات اللي هتخليك تعيش تجربة فريدة.
+      من الحادق للحلو، ومن الطعم الكلاسيك للإضافات الجديدة.. عندنا كل اللي نفسك فيه.
+      وما تنساش تسأل عن عروضنا الخاصة أو تطلبها بسهولة من خلال موقعنا الإلكتروني.
+    </p>
+  </div>
+
+  <!-- كارت المينو -->
+  <div class="menu-card">
+    <img src="1.png" alt="Menu">
+    <a href="مينو فريسكا بايظة (3).pdf" class="btn" target="_blank">View Menu</a>
+  </div>
+
+  <!-- اللينك -->
+  <div class="footer-link">
+    <a href="https://creative-code-lab108.github.io/fresca-bayza/" target="_blank">
+      fresca bayza Website →
+    </a>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+
+      <div class="footer-section">
+        <h4>اتصل بنا</h4>
+        <ul>
+          <li><i class="fas fa-phone"></i><a href="tel:+201008973583">01008973583</a></li>
+          <li><i class="fab fa-whatsapp"></i><a href="https://api.whatsapp.com/send?phone=201108585906" target="_blank">01108585906</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>تابعنا</h4>
+        <div class="social-links">
+          <a class="fac" href="https://www.facebook.com/p/%D9%81%D8%B1%D9%8A%D8%B3%D9%83%D8%A7-%D8%A8%D8%A7%D9%8A%D8%B8%D8%A9-61557397905390/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a class="in" href="https://www.instagram.com/fresca_bayza/?hl=ar" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a class="ti" href="https://tiktok.com/@fresca_6" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+          <a class="wa" href="https://api.whatsapp.com/send?phone=201108585906" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- الخريطة 1 -->
+    <div style="flex: 1 1 300px;">
+      <h4>الفرع - المندرة ش حسني أمام الغزالي للعطور الاسكندرية </h4>
+      <br>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d213.1228037943699!2d30.011101134238096!3d31.27706718677649!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5d1fec6ad13b5%3A0xbda2c4cf477fe2da!2z2YHYsdmK2LPZg9inINio2KfZiti42Kk!5e0!3m2!1sar!2seg!4v1755787365483!5m2!1sar!2seg"
+        width="50%" height="200" style="border:0; border-radius: 10px;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+
+    <!-- حقوق -->
+    <div class="footer-section" style="margin-top: 20px; font-size: 0.9em; text-align: center;">
+      <p>© 2025 جميع الحقوق محفوظة - <strong>فريسكا بايظة</strong></p>
+      <p>تم الإنشاء بواسطة شركة <strong><a href="https://www.facebook.com/profile.php?id=61563758474952&locale=ar_AR" target="_blank">Creative Code Lab</a></strong></p>
+    </div>
+    <br>
+  </footer>
+
+</body>
+</html>
